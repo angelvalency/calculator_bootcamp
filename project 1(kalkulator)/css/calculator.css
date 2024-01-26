@@ -1,0 +1,128 @@
+*, html{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: #DAF0FF;
+    --gradien-1:  rgba(123,182,246,1);
+    --gradien-2: rgba(238,244,250,1);
+    --btn-custom-1: #e1e7ee;
+    --btn-custom-2:  #deddf4 ;
+    --btn-custom-3:  #eef4fa;
+    --font-color: black;
+    --border-color: white;
+}
+
+.bg{
+    background-color: var(--bg-color);
+    
+}
+.dark-mode {
+    --bg-color: #202020;
+    --gradien-1:  rgb(42, 78, 139);
+    --gradien-2: rgb(18, 18, 19);
+    --btn-custom-1: #b6b7b9;
+    --btn-custom-2:  #8592a7 ;
+    --btn-custom-3:  #eef4fa;
+    --font-color: white;
+    --border-color: black;
+}
+
+.d-block{
+    background-image: radial-gradient( circle 116px at 94% 11%,  var(--gradien-1) 0%, var(--gradien-2) 90% );
+    width: 350px;
+    height: 720px;
+    border-radius: 30px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.btn {
+    height: 50px;
+    margin: 10px;
+    width: 50px;
+    box-shadow: inset 0.05px 0.05x 0.05px 0.05px;
+    margin-top: 30px;
+    opacity: 1;
+    box-shadow: rgba(156, 193, 249, 0.35) 0px 5px 15px;
+}
+
+.btn-custom-color-3 {
+    background-color: var(--btn-custom-3) !important;
+}
+.btn-custom-color-1 {
+    background-color: var(--btn-custom-1) !important;
+}
+.btn-custom-color-2 {
+    background-color: var(--btn-custom-2) !important;
+}
+
+.calculator-screen {
+    color: var(--font-color)!important;
+    border-color: var(--border-color) !important ;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #191919;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px  #3e4041;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
